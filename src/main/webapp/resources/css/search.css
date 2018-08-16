@@ -1,0 +1,87 @@
+.content {
+	padding-left: 10%;
+	padding-top: 10%;
+}
+
+.searchform {
+	float: left;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.searchform input {
+	height: 40px;
+	padding-left:10px;
+	border: 1px solid #d9d9d9;
+	width: 300px;
+	border-radius:0.2em;
+	box-sizing: border-box;
+}
+
+.searchform input[type="submit"] {
+	width: 150px;
+	border: none;
+	background-color: #f2f2f2;
+	color: #808080;
+	border-radius:0.2em;
+	box-sizing: border-box;
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+}
+.searchform input::placeholder{
+	color: #b3b3cc;
+	## padding-left: 10px;
+	font-size: 12px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.formtitle {
+	border-bottom: 1px solid #dddddd;
+	font-size: 22px;
+	padding-bottom: 3px;
+	font-family: 'Montserrat', sans-serif;
+	color: #808080;
+}
+.searchform p {
+	border-bottom: 1px solid red;
+}
+.searchresults {
+	float: left;
+}
+
+.searchresults table {
+	font-family: 'Roboto', sans-serif;
+    border-collapse: collapse;
+}
+
+.searchresults table th {
+    border-bottom: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+	padding-right: 100px;
+	color: #808080;
+	font-size: 13px;
+	font-weight: bold;
+	height: 55px;
+}
+
+.searchresults table td {
+    border-bottom: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+	padding: 10px 100px 10px 10px;
+	color: #8c8c8c;
+	font-size: 13px;
+	height: 45px;
+}
+
+.searchresults table td a{
+    
+	color: #0088cc;
+	font-size: 13px;
+	## font-weight: bold;
+}
+
+##.searchresults table tr:nth-child(even) {
+##    background-color: #8c8c8c;
+## }
