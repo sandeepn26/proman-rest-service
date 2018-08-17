@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active: "dev"
+  main:
+    banner-mode: "off"
+
+server:
+  url: abc.com
+  name: welcome
+  username: test
+  password: test
