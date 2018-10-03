@@ -5,7 +5,9 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
+import com.proman.db.DBMigrationAssistant;
+
+@SpringBootApplication(scanBasePackages={"com.proman.*"})
 public class RestApplication implements CommandLineRunner {
  
     @Autowired
@@ -17,7 +19,7 @@ public class RestApplication implements CommandLineRunner {
     }
  
     public void run(String... args) throws Exception {
-    	// DBMigrationAssistant.init();
+    	DBMigrationAssistant.init();
         System.out.println("using environment: " + configuration.getName());
         System.out.println("name: " + configuration.getName());
         System.out.println("servers: " + configuration.getUrl());
